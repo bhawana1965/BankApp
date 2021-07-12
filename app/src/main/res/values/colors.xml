@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#495057</color>
+    <color name="colorPrimary">#6c757d</color>
+    <color name="colorAccent">#efefef</color>
+    <color name="colorSecondary">#6c757d</color>
+    <color name="colorSecondaryDark">#495057</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_color">#1a7431</color>
+    <color name="gold">#FFC254</color>
+    <color name="grey_splash">#939598</color>
+</resources>

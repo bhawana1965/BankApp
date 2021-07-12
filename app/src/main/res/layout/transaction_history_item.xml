@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/transaction_card_view"
+    android:layout_margin="10dp"
+    android:fadingEdge="horizontal"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/t_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_weight="0.75"/>
+
+                <TextView
+                    android:id="@+id/t_from_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingEnd="3dp"
+                    android:textSize="18sp"
+                    android:hint="Not Selected"
+                    android:layout_weight="1.25"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/t_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_weight="0.75" />
+
+                <TextView
+                    android:id="@+id/t_to_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:hint="@string/transaction_cancelled"
+                    android:paddingEnd="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_weight="0.75"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rs"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.175" />
+
+                <TextView
+                    android:id="@+id/t_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:hint="Not Set"
+                    android:paddingStart="0dp"
+                    android:layout_weight="1.020"/>
+            </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

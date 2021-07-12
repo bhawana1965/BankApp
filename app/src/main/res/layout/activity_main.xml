@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:id="@+id/imgHome"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/bank_logo"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgHome"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:id="@+id/ll_home"
+        android:layout_marginTop="60dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnViewAllCustomers"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/item_rectangular_background"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/view_all_customers"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:layout_weight="3"
+            android:focusable="true" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTransactionHistory"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/item_rectangular_background"
+            android:clickable="true"
+            android:text="@string/transaction_history"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_weight="3"
+            android:focusable="true" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_rectangular_background"
+        android:layout_below="@+id/ll_home"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:text="@string/exit"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:focusable="true" />
+
+</RelativeLayout>
